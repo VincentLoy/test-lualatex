@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{luacode}
+\usepackage{graphicx}
+ 
+\begin{document}
+
+\begin{luacode}
+
+function read(file)
+    local handler = io.open(file, "rb")
+    local content = handler:read("*all")
+    handler:close()
+    return content
+end
+
+JSON = (loadfile "lua/JSON.lua")()
+local table = JSON:decode(read("datas.json"))
+
+tex.print(table['trip']['title'])
+
+tex.print("Durée du Voyage : " .. table['trip']['duration'])
+
+\end{luacode}
+
+% une liste !
+    Un liste de nombres aléatoires :
+    \begin{itemize}
+        \item \directlua{ tex.print(math.random()) }
+        \item \directlua{ tex.print(math.random()) }
+        \item \directlua{ tex.print(math.random()) }
+        \item \directlua{ tex.print(math.random()) }
+        \item \directlua{ tex.print(math.random()) }
+    \end{itemize}
+
+    \begin{figure}[h]
+        \includegraphics[width=10cm]{pdf.jpg}
+        \centering
+        \caption{PDFile}
+        \label{PDFile}
+    \end{figure}
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass{letter}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+
+%opening
+\title{LaTeX c'est word pour les barbus}
+\author{Vincent Loy}
+
+\begin{document}
+
+
+
+\includegraphics[height=45pt, width=100pt]{gmp.png}  
+
+Bonjour, je lis actuellement un cours traitant de LaTeX !
+
+LaTex ; une techno du \textsc{XX}\ième siècle !
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis auctor massa. Pellentesque tincidun 
+lacus vel malesuada ullamcorper, ipsum nibh interdum odio, eu malesuada nulla nisi a ex. Quisque tempor hendr 
+Praesent cursus dapibus augue, eu eleifend magna sodales sed. Curabitur dapibus auctor ante, at sagittis lacu. 
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque euismod 
+sollicitudin eros elementum in. Integer gravida, eros a eleifend finibus, dui est euismod massa, sit amet cur
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin nulla libero, nec dictum neque posu. 
+Cras finibus elit vel ligula vestibulum, at volutpat dolor porta. Nullam eget mi hendrerit sem vehicula iacul.
+
+\textit{Lorem ipsum dolor sit amet, \emph{consectetuer} adipiscing elit.}
+Lorem ipsum dolor sit amet, \emph{consectetuer} adipiscing elit.
+
+
+Gros paragraphe.
+
+% une liste !
+\begin{itemize}
+
+\item Un canard.
+\item Un mammouth.
+\item Un canard.
+\item Un mammouth.
+\item Un canard.
+\item Un mammouth.
+\item[@] Une pintade. % En plaçant un @ entre crochets après \item, j'ai transformé la puce en @
+\item[0] Un lapin.
+
+\end{itemize}
+
+{\fontfamily{pag}\selectfont mon bout de texte}
+
+
+\begin{description}
+\item[Un canard :] bestiole qui fait coin.
+\item[Un poulpe :] bestiole qui fait bloub.
+\item[Un ornithorynque :] bestiole qui fait rire.
+\item[Un ours :] bestiole qui fait mal.
+\end{description}
+
+\end{document}

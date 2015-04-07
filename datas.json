@@ -1,0 +1,18 @@
+{
+  "trip": {
+    "title":"Mon super tour du Mexique 2015",
+    "duration":"2 mois",
+    "start":"La 18 Mai 2015",
+    "end":"1 oz",
+    "budget": 2850,
+    "details": [
+      {
+        "city":"mexico"
+      },
+      {
+        "step":"Add nuts"
+      }
+    ]
+  }
+
+}
