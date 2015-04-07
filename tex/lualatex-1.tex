@@ -3,27 +3,6 @@
  
 \begin{document}
 
-\begin{luacode}
-  function readAll(file)
-    local f = io.open(file, "rb")
-    local content = f:read("*all")
-    f:close()
-    return content
-  end
-
- local json = require ("lua/dkjson")
- local tbl = {
-    animals = { "dog", "cat", "aardvark" },
-    instruments = { "violin", "trombone", "theremin" },
-    bugs = json.null,
-    trees = nil
-  }
-
-local str = json.encode (tbl.animals[1], { indent = true })
-
-tex.sprint(str)
-\end{luacode}
-
 % une liste !
   Un liste de nombres aléatoires :
   \begin{itemize}
