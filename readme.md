@@ -8,6 +8,7 @@ JSON.lua in ./lua directory from [Jeffray Friedl](http://regex.info/blog/lua/jso
 ```
 sudo apt-get install texlive-luatex
 sudo apt-get install texlive-full
+sudo apt-get install pdftk
 ```
 
 #### Step 2
